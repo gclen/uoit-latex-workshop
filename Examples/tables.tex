@@ -1,5 +1,7 @@
 \documentclass[a4paper]{article}
 
+\usepackage{booktabs}
+
 \begin{document}
 
 \title{Oh how the tables have turned}
@@ -13,11 +15,13 @@ Here we will create tables which can be a nice way of presenting data.
 \begin{center}
 %The c's indicate center justified text
 %Vertical lines will put vertical lines between columns 
-\begin{tabular} {| c | c | c | }
-\hline
-1 & 2 & 3 \\ \hline
-4 & 5 & 6 \\ \hline
-7 & 8 & 9 \\ \hline
+\begin{tabular} { c  c  c }
+\toprule
+Fruit & Quantity & Price \\ \midrule
+Apple & 2 & \$2.00 \\ \midrule
+Banana & 5 & \$3.50 \\ \midrule
+Orange & 8 & \$4.00 \\ 
+\bottomrule
 
 \end{tabular}
 \end{center}
